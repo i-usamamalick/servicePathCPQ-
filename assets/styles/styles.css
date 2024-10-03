@@ -1,0 +1,214 @@
+/* assets/styles/styles.scss */
+/* Variable Definitions */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Artwork Positions */
+.artwork {
+  position: absolute;
+  z-index: -1; /* Ensure artworks are behind other content */
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+/* Navbar Styles */
+.navbar-transparent {
+  background-color: transparent;
+  padding: 27px 54px 0 93px;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  font-size: 15px !important;
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-outline-dark {
+  color: #000;
+  border-color: #000;
+  width: 93px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.btn-outline-dark.btn-demo {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #6ab245;
+  transition: ease-in 0.4s, ease-out 0.4s;
+}
+.btn-outline-dark.btn-demo:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-dark.btn-login {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: ease-in 0.4s, ease-out 0.4s;
+}
+.btn-outline-dark.btn-login:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #6ab245;
+}
+
+/* Main Content Styles */
+.main-heading {
+  font-size: 45px !important;
+  color: #6bb244;
+  margin-bottom: 84px;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 20px;
+  max-width: 1000px;
+  padding-left: 110px;
+}
+
+.lead {
+  margin-bottom: 27px;
+}
+
+.learn-more-btn {
+  height: 33px;
+  width: 289px;
+  background-color: #6bb244;
+  color: #fff;
+  line-height: 33px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.learn-more-btn:hover {
+  background-color: #558d36;
+}
+
+/* New Section Styles */
+.users-love-us {
+  margin-top: 110px;
+  width: 100%;
+  height: 133px;
+  background-color: #6ec93a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 103px 16px 60px;
+}
+.users-love-us h2 {
+  color: white;
+  font-size: 23px;
+}
+.users-love-us .image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 43px;
+}
+
+/* Let's Chat and Our Platform Section Styles */
+.section-heading {
+  text-align: center;
+  color: #6bb244;
+  font-weight: bold;
+}
+.section-heading.lets-chat {
+  margin-top: 108px;
+}
+.section-heading.lets-chat h2 {
+  font-size: 46px;
+}
+.section-heading.our-platform {
+  margin-top: 38px;
+}
+.section-heading.our-platform h2 {
+  font-size: 64px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.contact-form form {
+  width: 100%;
+  max-width: 600px;
+}
+.contact-form form input, .contact-form form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 12px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.contact-form form input::placeholder, .contact-form form textarea::placeholder {
+  color: #000;
+}
+.contact-form form textarea {
+  resize: none;
+}
+.contact-form form .submit-btn {
+  width: 288px;
+  height: 35px;
+  background-color: #6bb244;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 67.5px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+  .learn-more-btn {
+    height: 39.6px;
+    width: 346.8px;
+    line-height: 39.6px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
